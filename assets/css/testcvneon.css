@@ -168,8 +168,8 @@ h2 {
 /*Creation des flip cards*/
 .flip-card {
     background-color: black;
-    width: 280px;
-    height: 300px;
+    width: 265px;
+    height: 265px;
 
     box-shadow: 1px 1px 2px black, 1px 1px 25px skyblue, 1px 1px 5px skyblue,1px 1px 10px skyblue;
     perspective: 1000px;
@@ -217,17 +217,132 @@ h2 {
 .flip-card-back-skill {
     background: black;
     color: white;
-    transform: rotateY(180deg) scale(2);
+    transform: rotateY(180deg) scale(1.7);
     width: 100%;
-    height: 110%;
+    height: 100%;
     box-shadow: 1px 1px 2px black, 0 0 25px skyblue, 0 0 5px skyblue;
 }
+/*.interiorcardskills{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-between;}*/
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*Decoration des icones */
 .fa, .fab, .fas {
     color: #fff;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 1.5em;
 }
+/*icone html*/
+#html {
+    color: #e34f26;
+    text-shadow: 0 0 5px #e34f26, 0 0 10px #e34f26, 0 0 15px #e34f26;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+    }
+#html:hover {
+    transform: scale(1.5);
+}
+
+#css {
+    color: #264de4;
+    text-shadow: 0 0 5px #264de4, 0 0 10px  #264de4, 0 0 15px  #264de4;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#css:hover {
+    transform: scale(1.5);
+}
+
+#js {
+    color: #f0db4f;
+    text-shadow: 0 0 5px #f0db4f, 0 0 10px  #f0db4f, 0 0 15px  #f0db4f;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#js:hover {
+    transform: scale(1.5);
+}
+
+#bootstrap {
+    color: #602C50;
+    text-shadow: 0 0 5px #602C50, 0 0 10px  #602C50, 0 0 15px  #602C50;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#bootstrap:hover {
+    transform: scale(1.5);
+}
+
+#database {
+    color: #00758F;
+    text-shadow: 0 0 5px #00758F, 0 0 10px  #00758F, 0 0 15px  #00758F;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#database:hover {
+    transform: scale(1.5);
+}
+
+#php {
+    color: #B0B3D6;
+    text-shadow: 0 0 5px #B0B3D6, 0 0 10px  #B0B3D6, 0 0 15px  #B0B3D6;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#php:hover {
+    transform: scale(1.5);
+}
+
+#symfony {
+    color:#585858;
+    text-shadow: 0 0 5px #585858, 0 0 10px #585858;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#symfony:hover {
+    transform: scale(1.5);
+}
+
+#vuejs {
+    color:#42b883;
+    text-shadow: 0 0 5px #42b883, 0 0 10px  #42b883, 0 0 15px  #42b883;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+
+}
+#vuejs:hover {
+    transform: scale(1.5);
+}
+
+#java {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px  #ff0000, 0 0 15px  #ff0000;
+    margin-top: 50px;
+    transition: transform .2s; /* Animation */
+}
+#java:hover {
+    transform: scale(1.5);
+}
+
 /*Icone gmail*/
 .far {
     color: #DB4437;
@@ -245,7 +360,7 @@ h2 {
 
 }
 /*icone telephone*/
-.fas {
+#phone {
     color: #25d366;
     text-shadow: 0 0 5px #25d366, 0 0 10px #25d366, 0 0 15px #25d366, 0 0 20px #25d366, 0 0 35px #25d366, 0 0 40px #25d366, 0 0 50px #25d366, 0 0 75px #25d366;
 
@@ -263,7 +378,7 @@ h2 {
 
 }
 /*style du titre du contact*/
-h1 {
+h3 {
     font-family: 'streamsterregular';
     color: purple;
 }
@@ -273,48 +388,6 @@ h1 {
     width: 100%;
     background-color: #ddd;
 }
-
-.skills {
-    text-align: right;
-    font-family: streamsterregular;
-    padding-top: 10px;
-padding-bottom: 10px;
-color: white;
-}
-
-.html {
-    width: 90%;
-    background-color: #e34c26;
-    box-shadow:1px 1px 2px #e34c26, 0 0 25px white, 0 0 5px #e34c26,0 0 10px white;
-}
-
-
-.css {
-    width: 80%;
-    background-color: #2196F3;
-    box-shadow:1px 1px 2px #264de4, 0 0 25px white, 0 0 5px #264de4,0 0 10px white;
-}
-
-
-.js {
-    width: 65%;
-    background-color: #f0db4f;
-    box-shadow:1px 1px 2px #264de4, 0 0 25px white, 0 0 5px #264de4,0 0 10px white;
-}
-
-.php {
-    width: 50%;
-    background-color: #b49154;
-    box-shadow:1px 1px 2px #b49154, 0 0 25px white, 0 0 5px #b49154,0 0 10px white;
-}
-.sql
-
-{
-    width: 60%;
-    background-color: #00758F;
-    box-shadow:1px 1px 2px #00758F, 0 0 25px white, 0 0 5px #00758F,0 0 10px white;
-}
-
 /*/responsive*/
 @media screen and (max-width: 768px) {
     html {
