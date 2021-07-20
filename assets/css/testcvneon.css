@@ -382,7 +382,12 @@ h3 {
     font-family: 'streamsterregular';
     color: purple;
 }
-
+a:link{
+    color:mediumpurple;
+}
+a:visited{
+    color:palevioletred;
+}
 /*style des barres de skill*/
 .containerskill {
     width: 100%;
